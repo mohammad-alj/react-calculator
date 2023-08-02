@@ -77,9 +77,6 @@ const ButtonGrid = ({onSelectSymbol, onEquals, onAllClear, onDelete, onSelectPoi
 			<Button style='operator' onclick={onEquals}>
 				=
 			</Button>
-			<Button onclick={() => console.log('test')} style='number'>
-				test
-			</Button>
 		</div>
 	);
 };
