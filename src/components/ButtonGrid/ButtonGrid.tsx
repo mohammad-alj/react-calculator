@@ -36,7 +36,7 @@ const ButtonGrid = ({
 			<Button style='symbol' onclick={onSelectPoint}>
 				.
 			</Button>
-			<Button style='operator' onclick={onDevide()}>
+			<Button style='operator' onclick={onDevide}>
 				/
 			</Button>
 			{/* row 2 */}
@@ -49,7 +49,7 @@ const ButtonGrid = ({
 			<Button style='number' onclick={() => onSelectSymbol('9')}>
 				9
 			</Button>
-			<Button style='operator' onclick={onMultiply()}>
+			<Button style='operator' onclick={onMultiply}>
 				*
 			</Button>
 			{/* row 3 */}

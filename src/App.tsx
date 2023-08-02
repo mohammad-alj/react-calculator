@@ -12,6 +12,10 @@ const App = () => {
 				onDelete={() => console.log('deleted')}
 				onEquals={() => console.log('equals')}
 				onSelectPoint={() => console.log('.')}
+				onIncrement={() => console.log('+')}
+				onDecrement={() => console.log('-')}
+				onMultiply={() => console.log('*')}
+				onDevide={() => console.log('/')}
 			/>
 		</div>
 	);
