@@ -21,7 +21,12 @@ const App = () => {
 				onAllClear={() => console.log('Cleared')}
 				onDelete={() => console.log('deleted')}
 				onEquals={() => console.log('equals')}
-				onSelectPoint={() => console.log('.')}
+				onSelectPoint={() => {
+					if (expression.current.includes('.')) return;
+
+					if (!expression.current) setExpression({...expression, current: '0.'});
+					else setExpression({...expression, current: expression.current + '.'});
+				}}
 				onIncrement={() => console.log('+')}
 				onDecrement={() => console.log('-')}
 				onMultiply={() => console.log('*')}
