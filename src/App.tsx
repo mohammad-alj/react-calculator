@@ -3,7 +3,7 @@ import Button from './components/Button';
 const App = () => {
 	return (
 		<div>
-			<Button>click me</Button>
+			<Button onclick={() => console.log('clicked')}>click me</Button>
 		</div>
 	);
 };
