@@ -6,10 +6,17 @@
 	border: none;
 	cursor: pointer;
 	font-size: 20px;
+	background: none;
 }
 
 .btnNumber {
 	color: rgb(153, 0, 0);
 	background: none;
 	border: 2px solid rgb(153, 0, 0);
+	transition: background 0.15s;
+}
+
+.btnNumber:hover {
+	background: rgb(153, 0, 0);
+	color: #fff;
 }
