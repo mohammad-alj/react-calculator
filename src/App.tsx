@@ -3,7 +3,7 @@ import Button from './components/Button';
 const App = () => {
 	return (
 		<div>
-			<Button>click me</Button>
+			<Button>1</Button>
 		</div>
 	);
 };

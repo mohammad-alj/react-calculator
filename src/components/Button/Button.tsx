@@ -5,7 +5,7 @@ interface Props {
 }
 
 const Button = ({children}: Props) => {
-	return <button className={styles.btn}>{children}</button>;
+	return <button className={[styles.btn, styles.btnNumber].join(' ')}>{children}</button>;
 };
 
 export default Button;
