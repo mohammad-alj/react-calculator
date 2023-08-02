@@ -7,9 +7,23 @@ interface Props {
 	onAllClear: () => void;
 	onDelete: () => void;
 	onSelectPoint: () => void;
+	onIncrement: () => void;
+	onDecrement: () => void;
+	onMultiply: () => void;
+	onDevide: () => void;
 }
 
-const ButtonGrid = ({onSelectSymbol, onEquals, onAllClear, onDelete, onSelectPoint}: Props) => {
+const ButtonGrid = ({
+	onSelectSymbol,
+	onEquals,
+	onAllClear,
+	onDelete,
+	onSelectPoint,
+	onIncrement,
+	onDecrement,
+	onMultiply,
+	onDevide,
+}: Props) => {
 	return (
 		<div className={styles.grid}>
 			{/* row 1 */}
@@ -22,7 +36,7 @@ const ButtonGrid = ({onSelectSymbol, onEquals, onAllClear, onDelete, onSelectPoi
 			<Button style='symbol' onclick={onSelectPoint}>
 				.
 			</Button>
-			<Button style='operator' onclick={() => onSelectSymbol('/')}>
+			<Button style='operator' onclick={onDevide()}>
 				/
 			</Button>
 			{/* row 2 */}
@@ -35,7 +49,7 @@ const ButtonGrid = ({onSelectSymbol, onEquals, onAllClear, onDelete, onSelectPoi
 			<Button style='number' onclick={() => onSelectSymbol('9')}>
 				9
 			</Button>
-			<Button style='operator' onclick={() => onSelectSymbol('*')}>
+			<Button style='operator' onclick={onMultiply()}>
 				*
 			</Button>
 			{/* row 3 */}
@@ -48,7 +62,7 @@ const ButtonGrid = ({onSelectSymbol, onEquals, onAllClear, onDelete, onSelectPoi
 			<Button style='number' onclick={() => onSelectSymbol('6')}>
 				6
 			</Button>
-			<Button style='operator' onclick={() => onSelectSymbol('-')}>
+			<Button style='operator' onclick={onDecrement}>
 				-
 			</Button>
 			{/* row 4 */}
@@ -61,7 +75,7 @@ const ButtonGrid = ({onSelectSymbol, onEquals, onAllClear, onDelete, onSelectPoi
 			<Button style='number' onclick={() => onSelectSymbol('3')}>
 				3
 			</Button>
-			<Button style='operator' onclick={() => onSelectSymbol('+')}>
+			<Button style='operator' onclick={onIncrement}>
 				+
 			</Button>
 			{/* row 5 */}
