@@ -1,6 +1,7 @@
 :root {
 	--color-number: rgb(153, 0, 0);
 	--color-operator: rgb(56, 185, 39);
+	--color-symbol: rgb(255, 179, 0);
 }
 
 .btn {
@@ -35,5 +36,17 @@
 
 .btnOperator:hover {
 	background: var(--color-operator);
+	color: #fff;
+}
+
+.btnSymbol {
+	color: var(--color-symbol);
+	background: none;
+	border: 2px solid var(--color-symbol);
+	transition: background 0.15s;
+}
+
+.btnSymbol:hover {
+	background: var(--color-symbol);
 	color: #fff;
 }
