@@ -20,3 +20,15 @@
 	background: rgb(153, 0, 0);
 	color: #fff;
 }
+
+.btnOperator {
+	color: rgb(56, 185, 39);
+	background: none;
+	border: 2px solid rgb(56, 185, 39);
+	transition: background 0.15s;
+}
+
+.btnOperator:hover {
+	background: rgb(56, 185, 39);
+	color: #fff;
+}
