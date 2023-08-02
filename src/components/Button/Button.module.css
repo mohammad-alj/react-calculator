@@ -16,50 +16,50 @@
 	background: none;
 }
 
-.btnNumber {
+.btn-number {
 	color: var(--color-number);
 	background: none;
 	border: 2px solid var(--color-number);
 	transition: background 0.15s;
 }
 
-.btnNumber:hover {
+.btn-number:hover {
 	background: var(--color-number);
 	color: #fff;
 }
 
-.btnOperator {
+.btn-operator {
 	color: var(--color-operator);
 	background: none;
 	border: 2px solid var(--color-operator);
 	transition: background 0.15s;
 }
 
-.btnOperator:hover {
+.btn-operator:hover {
 	background: var(--color-operator);
 	color: #fff;
 }
 
-.btnSymbol {
+.btn-symbol {
 	color: var(--color-symbol);
 	background: none;
 	border: 2px solid var(--color-symbol);
 	transition: background 0.15s;
 }
 
-.btnSymbol:hover {
+.btn-symbol:hover {
 	background: var(--color-symbol);
 	color: #fff;
 }
 
-.btnOperation {
+.btn-operation {
 	color: var(--color-operation);
 	background: none;
 	border: 2px solid var(--color-operation);
 	transition: background 0.15s;
 }
 
-.btnOperation:hover {
+.btn-operation:hover {
 	background: var(--color-operation);
 	color: #fff;
 }
