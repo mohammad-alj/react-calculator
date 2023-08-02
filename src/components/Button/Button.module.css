@@ -1,0 +1,65 @@
+:root {
+	--color-number: rgb(153, 0, 0);
+	--color-operator: rgb(56, 185, 39);
+	--color-symbol: rgb(255, 179, 0);
+	--color-operation: rgb(255, 0, 0);
+}
+
+.btn {
+	/* base button class */
+	width: 50px;
+	height: 50px;
+	border-radius: 5px;
+	border: none;
+	cursor: pointer;
+	font-size: 20px;
+	background: none;
+}
+
+.btnNumber {
+	color: var(--color-number);
+	background: none;
+	border: 2px solid var(--color-number);
+	transition: background 0.15s;
+}
+
+.btnNumber:hover {
+	background: var(--color-number);
+	color: #fff;
+}
+
+.btnOperator {
+	color: var(--color-operator);
+	background: none;
+	border: 2px solid var(--color-operator);
+	transition: background 0.15s;
+}
+
+.btnOperator:hover {
+	background: var(--color-operator);
+	color: #fff;
+}
+
+.btnSymbol {
+	color: var(--color-symbol);
+	background: none;
+	border: 2px solid var(--color-symbol);
+	transition: background 0.15s;
+}
+
+.btnSymbol:hover {
+	background: var(--color-symbol);
+	color: #fff;
+}
+
+.btnOperation {
+	color: var(--color-operation);
+	background: none;
+	border: 2px solid var(--color-operation);
+	transition: background 0.15s;
+}
+
+.btnOperation:hover {
+	background: var(--color-operation);
+	color: #fff;
+}
