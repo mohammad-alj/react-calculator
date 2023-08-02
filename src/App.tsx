@@ -18,8 +18,10 @@ const App = () => {
 				onSelectSymbol={symbol =>
 					setExpression({...expression, current: expression.current + symbol})
 				}
-				onAllClear={() => console.log('Cleared')}
-				onDelete={() => console.log('deleted')}
+				onAllClear={() => setExpression({operator: '', current: '', previous: ''})}
+				onDelete={() => {
+					setExpression({...expression, current: expression.current.substring(0, -1)});
+				}}
 				onEquals={() => console.log('equals')}
 				onSelectPoint={() => {
 					if (expression.current.includes('.')) return;
