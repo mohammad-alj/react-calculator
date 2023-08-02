@@ -1,4 +1,5 @@
 import ButtonGrid from './components/ButtonGrid';
+import OutputWindow from './components/OutputWindow';
 
 const App = () => {
 	return (
@@ -10,6 +11,7 @@ const App = () => {
 				onEquals={() => console.log('equals')}
 				onSelectPoint={() => console.log('.')}
 			/> */}
+			<OutputWindow />
 		</div>
 	);
 };
