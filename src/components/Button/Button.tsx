@@ -6,8 +6,12 @@ interface Props {
 	onclick?: () => void;
 }
 
-const Button = ({children, style}: Props) => {
-	return <button className={[styles.btn, styles['btn-' + style]].join(' ')}>{children}</button>;
+const Button = ({children, style, onclick}: Props) => {
+	return (
+		<button className={[styles.btn, styles['btn-' + style]].join(' ')} onClick={onclick}>
+			{children}
+		</button>
+	);
 };
 
 export default Button;

@@ -13,7 +13,7 @@ const ButtonGrid = ({onSelectSymbol, onEquals, onAllClear, onDelete, onSelectPoi
 	return (
 		<div className={styles.grid}>
 			{/* row 1 */}
-			<Button style='operation' onclick={onAllClear}>
+			<Button style='operation' onclick={() => onAllClear()}>
 				AC
 			</Button>
 			<Button style='operation' onclick={onDelete}>
@@ -76,6 +76,9 @@ const ButtonGrid = ({onSelectSymbol, onEquals, onAllClear, onDelete, onSelectPoi
 			</Button>
 			<Button style='operator' onclick={onEquals}>
 				=
+			</Button>
+			<Button onclick={() => console.log('test')} style='number'>
+				test
 			</Button>
 		</div>
 	);
