@@ -29,10 +29,9 @@ const App = () => {
 					if (!expression.current) setExpression({...expression, current: '0.'});
 					else setExpression({...expression, current: expression.current + '.'});
 				}}
-				onIncrement={() => console.log('+')}
-				onDecrement={() => console.log('-')}
-				onMultiply={() => console.log('*')}
-				onDevide={() => console.log('/')}
+				onSelectOperator={o =>
+					setExpression({operator: o, previous: expression.current, current: ''})
+				}
 			/>
 		</div>
 	);
