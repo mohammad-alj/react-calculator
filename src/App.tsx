@@ -11,7 +11,7 @@ const App = () => {
 				onEquals={() => console.log('equals')}
 				onSelectPoint={() => console.log('.')}
 			/> */}
-			<OutputWindow />
+			<OutputWindow previous='2' operator='+' current='4' />
 		</div>
 	);
 };
