@@ -1,3 +1,8 @@
+:root {
+	--color-number: rgb(153, 0, 0);
+	--color-operator: rgb(56, 185, 39);
+}
+
 .btn {
 	/* base button class */
 	width: 50px;
@@ -10,25 +15,25 @@
 }
 
 .btnNumber {
-	color: rgb(153, 0, 0);
+	color: var(--color-number);
 	background: none;
-	border: 2px solid rgb(153, 0, 0);
+	border: 2px solid var(--color-number);
 	transition: background 0.15s;
 }
 
 .btnNumber:hover {
-	background: rgb(153, 0, 0);
+	background: var(--color-number);
 	color: #fff;
 }
 
 .btnOperator {
-	color: rgb(56, 185, 39);
+	color: var(--color-operator);
 	background: none;
-	border: 2px solid rgb(56, 185, 39);
+	border: 2px solid var(--color-operator);
 	transition: background 0.15s;
 }
 
 .btnOperator:hover {
-	background: rgb(56, 185, 39);
+	background: var(--color-operator);
 	color: #fff;
 }
