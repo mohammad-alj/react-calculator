@@ -1,13 +1,23 @@
 import ButtonGrid from './components/ButtonGrid';
 import OutputWindow from './components/OutputWindow';
 import './App.css';
+import {useState} from 'react';
+
+type Operator = '+' | '-' | '*' | '/';
 
 const App = () => {
+	const [expression, setExpression] = useState({operator: '', current: '', previous: ''});
 	return (
 		<div className='calculator'>
-			<OutputWindow previous='2' operator='+' current='4' />
+			<OutputWindow
+				previous={expression.previous}
+				operator={expression.operator as Operator}
+				current={expression.current}
+			/>
 			<ButtonGrid
-				onSelectSymbol={symbol => console.log(symbol)}
+				onSelectSymbol={symbol =>
+					setExpression({...expression, current: expression.current + symbol})
+				}
 				onAllClear={() => console.log('Cleared')}
 				onDelete={() => console.log('deleted')}
 				onEquals={() => console.log('equals')}
